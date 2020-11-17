@@ -82,10 +82,6 @@ export class AppComponent {
   silenceTimeout() {
     let silenceTimer = 3000;
 
-    console.log(
-      this.silenceCounter
-    );
-
     if (this.silenceCounter < 9) {
       if (this.silenceCounter < 3) {
         silenceTimer == 3000
@@ -112,8 +108,6 @@ export class AppComponent {
     } else {
       // ban
     }
-    console.log(silenceTimer);
-
   }
 
   liftSilence() {
