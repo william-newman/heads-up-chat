@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "heads-up-chat"
+    }
+  },
+  "defaultProject": "heads-up-chat",
+  "cli": {
+    "analytics": "8da2acbe-e832-421e-a630-5fd387c4d150"
+  }
 }

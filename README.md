@@ -1,6 +1,9 @@
 # HeadsUpChat
+A text input that gives you a visual cue if what you're about to post is deemed objectionable or unacceptable by the host.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+
+https://www.npmjs.com/package/ngx-autosize
 
 ## Development server
 
