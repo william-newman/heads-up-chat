@@ -14,3 +14,25 @@
   background: rgba(102, 51, 153, 0.24);
   overflow-y: auto;
 }
+
+.silence-container {
+  position: fixed;
+  top: 5vh;
+  left: 25%;
+  width: 50%;
+}
+
+.silenced {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 1.3rem;
+  color: tomato;
+  letter-spacing: 2px;
+}
+
+.button-info-text {
+  display: inline;
+  color: grey;
+  font-size: 0.9rem;
+  padding: 0 8px;
+}

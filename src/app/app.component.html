@@ -1,3 +1,6 @@
+<div class="silence-container">
+  <div *ngIf="silenced" class="silenced">Silenced</div>
+</div>
 <form #mainInputForm="ngForm" class="main-event-container">
   <textarea
     autosize
@@ -11,7 +14,11 @@
     id="main-input"
     [(ngModel)]="mainInputText"
     #mainInputEle
-    [style.color]="isObscene ? 'red': (isQuestionable ? 'yellow' : 'black')"
+    [style.color]="isObscene ? 'red' : isQuestionable ? 'yellow' : 'black'"
+    [disabled]="silenced"
+    (keydown)="checkForSend($event)"
     autofocus
   ></textarea>
+  <button (click)="sendChatMessage()">Send</button>
+  <div class="button-info-text">Shortcut: Ctrl-Enter</div>
 </form>
